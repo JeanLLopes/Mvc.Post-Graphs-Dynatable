@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "POST";
+}
+
+
+<br/>
+<section>
+    <div id="divTestandoPost">
+        <h3>TESTANDO POST com MVC 5</h3>
+
+        <label class="text-left" for="txtText">INSIRA SEU TEXTO PARA SER ENVIADO</label>
+        <input type="text" id="txtText" name="txtText" placeholder="Insira um texto para Enviado" class="form-control" />
+        <button id="btnPost" name="btnPost" class="btn btn-info" data-loading-text="Carregando...">Enviar POST</button>
+        <br />
+        <output id="outputResultado" name="outputResultado"></output>
+    </div>
+    <hr />
+    <div>
+        <h3>TESTANDO GRAFICO com DYNATABLE</h3>
+        <button id="btnPostTable" name="btnPostTable" class="btn btn-info" data-loading-text="Carregando Dados...">Carregar Lista</button>
+        <br/>
+        <table id="tableResultado" style="display: none;">
+            <thead>
+                <tr>
+                    <th data-dynatable-column="Nome">Nome</th>
+                    <th data-dynatable-column="Sobrenome">Sobrenome</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</section>
+

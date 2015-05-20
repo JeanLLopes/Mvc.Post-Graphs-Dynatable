@@ -16,3 +16,8 @@ textarea {
     max-width: 280px;
 }
 
+.tabela-resultado{ display: none;  margin: 10px 0;}
+.tabela-resultado>thead>tr>th>a{ text-transform: uppercase}
+.tabela-resultado>thead>tr{background-color: #000000}
+.tabela-resultado>thead>tr>th{width: 570px}
+

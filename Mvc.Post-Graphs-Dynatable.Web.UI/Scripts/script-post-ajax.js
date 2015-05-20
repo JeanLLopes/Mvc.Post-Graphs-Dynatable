@@ -1,5 +1,5 @@
 ﻿//EXECUTA A FUNÇÃO AJAX AO CLIQUE DO BOTÃO
-document.querySelector('#btnPost').addEventListener('click', function() {
+document.querySelector('#btnPost').addEventListener('click', function () {
     $('#outputResultado').text('');
     var btn = $(this);
     btn.button('loading');
@@ -28,7 +28,7 @@ document.querySelector('#btnPost').addEventListener('click', function() {
     });
 });
 
-document.querySelector('#btnPostTable').addEventListener('click', function() {
+document.querySelector('#btnPostTable').addEventListener('click', function () {
     var btn = $(this);
     btn.button('loading');
     $.ajax({
@@ -47,7 +47,6 @@ document.querySelector('#btnPostTable').addEventListener('click', function() {
         },
         success: function (resultado) {
             $('#tableResultado').css('display', 'block');
-            var myRecords = JSON.stringify(resultado);
             var tabela = $('#tableResultado').dynatable({
                 features: {
                     paginate: true,
@@ -56,11 +55,9 @@ document.querySelector('#btnPostTable').addEventListener('click', function() {
                     search: false
                 },
                 dataset: {
-                    records: myRecords
+                    records: resultado
                 }
             }).data('dynatable');
-            tabela.paginationPage.set(1);
-            tabela.records.updateFromJson({ records: myRecords });
             tabela.records.init();
             tabela.process();
 

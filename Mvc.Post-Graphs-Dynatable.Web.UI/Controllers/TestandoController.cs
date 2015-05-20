@@ -35,9 +35,9 @@ namespace Mvc.Post_Graphs_Dynatable.Web.UI.Controllers
         {
             return new List<Pessoa>()
             {
-                new Pessoa{Nome = "Teste_1",Sobrenome = "Teste Sobrenome1"},
-                new Pessoa{Nome = "Teste_2",Sobrenome = "Teste Sobrenome2"},
-                new Pessoa{Nome = "Teste_3",Sobrenome = "Teste Sobrenome3"},
+                new Pessoa{nome = "Jose da Silva",sobrenome = "Sobrenome Generico"},
+                new Pessoa{nome = "Tereza da Silva",sobrenome = "Sobrenome Generico"},
+                new Pessoa{nome = "Testando da Silva",sobrenome = "Sobrenome Generico"},
             };
         }
 
